@@ -1,6 +1,8 @@
-# VS Code ↔ Maya link
+# Kostudo — VS Code ↔ Maya
 
-This workspace includes a simple setup to send Python scripts from VS Code to Autodesk Maya and optionally attach a debugger.
+Kostudo is a lightweight workflow to send Python scripts from VS Code to Autodesk Maya and optionally attach a debugger.
+
+Repository: https://github.com/CrapyShit/Kostudo
 
 ## One-time setup in Maya
 
@@ -42,3 +44,18 @@ Notes:
   py -3 .\tools\send_to_maya.py .\scripts\my_script.py --host 127.0.0.1 --port 7002
   ```
 - The task already uses PowerShell, so no local Python is required.
+
+## Troubleshooting
+
+- Connection refused when sending a file
+  - Make sure you ran `tools/maya_link_startup.py` in Maya so the commandPort is open (default: 127.0.0.1:7002).
+  - Firewalls can block localhost ports; allow Maya to listen on the chosen port.
+- Git warnings on Windows (safe.directory)
+  - If you see "detected dubious ownership" on external drives, run:
+    - `git config --global --add safe.directory E:/Kotsudo`
+- PATH not refreshed after installing Git/gh
+  - Open a new PowerShell window or restart VS Code so the new PATH is picked up.
+
+## License
+
+No license has been chosen yet. If you plan to open-source this, consider adding MIT or Apache-2.0. I can add it on request.
