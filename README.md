@@ -130,7 +130,12 @@ Notes:
 
 ## License
 
-No license has been chosen yet. If you plan to open-source this, consider adding MIT or Apache-2.0. I can add it on request.
+- Code: PolyForm Noncommercial License 1.0.0 — noncommercial use allowed; commercial use requires permission.
+  - See `LICENSE` and https://polyformproject.org/licenses/noncommercial/1.0.0/
+- Documentation and media: Creative Commons Attribution‑NonCommercial 4.0 (CC BY‑NC 4.0).
+  - See `LICENSE-DOCS` and https://creativecommons.org/licenses/by-nc/4.0/
+
+Commercial licensing: open an issue on GitHub to request permission or discuss terms.
 
 ## Acknowledgements
 
